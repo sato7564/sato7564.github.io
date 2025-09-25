@@ -50,19 +50,6 @@
         .link:hover {
             background-color: #B8941F;
         }
-        .spinner {
-            border: 3px solid rgba(255,255,255,0.3);
-            border-top: 3px solid #D4AF37;
-            border-radius: 50%;
-            width: 30px;
-            height: 30px;
-            animation: spin 1s linear infinite;
-            margin: 20px auto;
-        }
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
     </style>
 </head>
 <body>
@@ -70,18 +57,8 @@
         <div class="logo">ウェルス&ピラティス</div>
         <div class="subtitle">ピラティススタジオ</div>
         <div class="redirect-text">サイトに自動リダイレクトしています...</div>
-        <div class="spinner"></div>
         <p>自動リダイレクトされない場合は、下のリンクをクリックしてください：</p>
         <a href="https://sato7564.github.io/WebTest1/" class="link">ウェルス&ピラティスへ</a>
     </div>
-
-    <script>
-        // JavaScript でも念のためリダイレクト
-        setTimeout(function() {
-            if (window.location.hostname === 'sato7564.github.io' && window.location.pathname === '/') {
-                window.location.href = 'https://sato7564.github.io/WebTest1/';
-            }
-        }, 1000);
-    </script>
 </body>
 </html>
