@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ウェルス&ピラティス</title>
+    <meta http-equiv="refresh" content="0; url=https://sato7564.github.io/WebTest1/">
+    <link rel="canonical" href="https://sato7564.github.io/WebTest1/">
+    <style>
+        body {
+            font-family: 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 600px;
+            padding: 2rem;
+        }
+        .logo {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #D4AF37;
+            margin-bottom: 1rem;
+        }
+        .subtitle {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+        .redirect-text {
+            font-size: 1rem;
+            margin-bottom: 1rem;
+        }
+        .link {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #D4AF37;
+            color: #333;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .link:hover {
+            background-color: #B8941F;
+        }
+        .spinner {
+            border: 3px solid rgba(255,255,255,0.3);
+            border-top: 3px solid #D4AF37;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            animation: spin 1s linear infinite;
+            margin: 20px auto;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">ウェルス&ピラティス</div>
+        <div class="subtitle">ピラティススタジオ</div>
+        <div class="redirect-text">サイトに自動リダイレクトしています...</div>
+        <div class="spinner"></div>
+        <p>自動リダイレクトされない場合は、下のリンクをクリックしてください：</p>
+        <a href="https://sato7564.github.io/WebTest1/" class="link">ウェルス&ピラティスへ</a>
+    </div>
+
+    <script>
+        // JavaScript でも念のためリダイレクト
+        setTimeout(function() {
+            if (window.location.hostname === 'sato7564.github.io' && window.location.pathname === '/') {
+                window.location.href = 'https://sato7564.github.io/WebTest1/';
+            }
+        }, 1000);
+    </script>
+</body>
+</html>
